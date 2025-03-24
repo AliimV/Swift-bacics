@@ -1,0 +1,31 @@
+struct HeadPhones {
+    var brand: String
+    var color: String
+    var price: Int
+    var headPhonesIsGood: Bool
+    
+    init(brand: String, color: String, price: Int, headPhonesIsGood: Bool) {
+        self.brand = brand
+        self.color = color
+        self.price = price
+        self.headPhonesIsGood = headPhonesIsGood
+    }
+    
+    func buyHeadPhones() -> String {
+        if headPhonesIsGood {
+            return "It's cool headPhones"
+        } else {
+            return "That's bad headPhones"
+        }
+    }
+    
+    mutating func dislikeColor(newColor: String) {
+        self.color = newColor
+    }
+}
+
+var jblFactory = HeadPhones(brand: "JBL", color: "White", price: 80, headPhonesIsGood: true)
+
+jblFactory.dislikeColor(newColor: "Black")
+
+print(jblFactory.color) // Выведет: Black
