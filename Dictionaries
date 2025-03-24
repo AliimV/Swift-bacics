@@ -1,0 +1,24 @@
+// Practice using dictionaries below ⭐
+var favoriteFilms = [
+  "The Sopranos": "1999",
+  "Stanger Things": "2017",
+  "Squid Game": "2020",
+  "Green Book": "2018"
+]
+// создание двух наборов по заданию
+var namesAndActors = [
+  "Antony Soprano": "James Gandolfini",
+  "Uill Bayers": "Noa Shnapp",
+  "The Sales Man": "Kon Yu",
+  "Tony Lipp": "Viggo Mortenson"
+]
+// удаление ключа из словаря
+namesAndActors.removeValue(forKey: "Tony Lipp")
+namesAndActors["Tony Lipp"] = nil
+
+// добавление ключ-значения в словарь по формуле:
+namesAndActors["Max Mayfield"] = "Sady Sink"
+
+// вывод набора с использованием обычной интерполяцией
+print("This is my best films \(favoriteFilms)")
+print("And these are my favorite characters and their actors: \(namesAndActors)")
