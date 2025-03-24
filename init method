@@ -1,0 +1,20 @@
+struct Iphone {
+
+  var brand: String
+  var quality: String
+  var price: Int
+  var design: String
+  var power: Int
+
+  init(brand: String, quality: String, price: Int, design: String, power: Int) {
+    self.brand = brand
+    self.quality = quality
+    self.price = price
+    self.design = design
+    self.power = power
+  }
+}
+
+var bestPhone = Iphone(brand: "Iphone", quality: "Not bad", price: 900, design: "So cool", power: 1900)
+
+print(bestPhone.brand)
