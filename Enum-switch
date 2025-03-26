@@ -1,0 +1,19 @@
+// Упрощенное использование case в enum
+enum Trip {
+    case car, train, moto, boat, airplane
+}
+
+var myTrip = Trip.airplane
+
+switch myTrip {
+    case .car: 
+        print("It's a car trip")
+    case .train: 
+        print("It's a funny trip")
+    case .moto:
+        print("It's a dangerous trip")
+    case .boat:
+        print("It's a slow trip")
+    case .airplane:
+        print("I prefer plane :)")
+}
